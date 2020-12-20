@@ -11,4 +11,15 @@ class Api::EventsController < ApplicationController
     render 'show.json.jb'
   end
 
+  def create
+    @event = Event.new(
+    name: params[:name],
+    date: params[:date], 
+    time: params[:time],
+    meeting_link: params[:meeting_link]
+    )
+    @event.save
+    render 'show.json.jb'
+  end
+
 end
