@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     get "/events/:id" => "events#show"
 
     post "/users" => "users#create"
+
+    post "/sessions" => "sessions#create"
   end
 end
