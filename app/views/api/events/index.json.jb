@@ -5,6 +5,7 @@
     date: event.date,
     time: event.time,
     meeting_link: event.meeting_link,
+    image: event.image,
     user_id: event.user_id,
     book_id: event.book_id
   

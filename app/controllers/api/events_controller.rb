@@ -37,6 +37,7 @@ class Api::EventsController < ApplicationController
     date: params[:date], 
     time: params[:time],
     meeting_link: params[:meeting_link],
+    image: params[:image],
     # book_id: params[:isbn13]
     )
     @event.save
