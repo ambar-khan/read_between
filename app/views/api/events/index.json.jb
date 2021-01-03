@@ -6,6 +6,7 @@
     time: event.time,
     meeting_link: event.meeting_link,
     user_id: event.user_id,
-    book_id: event.book_id,
+    book_id: event.book_id
+  
   }
 end
