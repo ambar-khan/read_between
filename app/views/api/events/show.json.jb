@@ -7,4 +7,11 @@
     image: @event.image,
     user_id: @event.user_id,
     book_id: @event.book_id,
+    first_name: @event.user.first_name,
+    last_name: @event.user.last_name,
+    email: @event.user.email,
+    book_title: @event.book_title,
+    book_subtitle: @event.book_subtitle,
+    book_author: @event.book_author,
+    book_description: @event.book_description
 }
