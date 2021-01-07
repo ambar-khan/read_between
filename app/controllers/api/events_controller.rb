@@ -14,7 +14,7 @@ class Api::EventsController < ApplicationController
   end
 
   def create
-    response = HTTP.get("https://www.googleapis.com/books/v1/volumes?q=isbn:#{params[:book_id]}&key=#{Rails.application.credentials.google_books_api[:api_key]}")
+    response = HTTP.get("https://www.googleapis.com/books/v1/volumes?q=isbn13:#{params[:book_id]}&key=#{Rails.application.credentials.google_books_api[:api_key]}")
     
     book = response.parse
     
@@ -24,7 +24,7 @@ class Api::EventsController < ApplicationController
 
     subtitle = book["items"][0]["volumeInfo"]["subtitle"]
     
-    author = book["items"][0]["volumeInfo"]["authors"]
+    author = book["items"][0]["volumeInfo"]["authors"][0]
 
     description = book["items"][0]["volumeInfo"]["description"]
 
