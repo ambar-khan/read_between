@@ -12,7 +12,9 @@ Rails.application.routes.draw do
     patch "/events/:id" => "events#update"
 
     post "/users" => "users#create"
-
+  
     post "/sessions" => "sessions#create"
+
+    post "eventregistrations" => "event_registrations#create"
   end
 end

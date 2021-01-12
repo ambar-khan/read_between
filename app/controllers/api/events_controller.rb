@@ -8,7 +8,7 @@ class Api::EventsController < ApplicationController
 
   def show
     @event = Event.find_by(id: params[:id])
-    # @event.user = Event.find_by(id: params[:id])
+    @registered_users = @event.users
     render 'show.json.jb'
 
   end
@@ -71,10 +71,3 @@ class Api::EventsController < ApplicationController
 end
 
  
-
-    # .then(response => response.json())
-    # .then(result => {
-    # this.setState({ books: result.items})
-    # })
-
-#{params[:isbn_13]} 

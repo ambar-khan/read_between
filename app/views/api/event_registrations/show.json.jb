@@ -1,0 +1,4 @@
+{
+  user_id: @event_registration.user_id,
+  event_id: @event_registration.event_id,
+}
