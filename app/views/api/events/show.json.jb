@@ -14,5 +14,5 @@
     book_subtitle: @event.book_subtitle,
     book_author: @event.book_author,
     book_description: @event.book_description,
-    registered_users: @registered_users,
+    registered_users: @event.users,
 }

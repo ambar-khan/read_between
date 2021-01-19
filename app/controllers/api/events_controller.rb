@@ -8,7 +8,6 @@ class Api::EventsController < ApplicationController
 
   def show
     @event = Event.find_by(id: params[:id])
-    @registered_users = @event.users
     render 'show.json.jb'
 
   end
