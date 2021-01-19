@@ -21,6 +21,8 @@ Bundler.require(*Rails.groups)
 
 module ReadBetween
   class Application < Rails::Application
+    # config/application.rb
+    config.assets.initialize_on_precompile = false
     config.generators.assets = false
     config.generators.helper = false
     # Initialize configuration defaults for originally generated Rails version.
