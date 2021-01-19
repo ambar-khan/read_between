@@ -1,6 +1,6 @@
 User.create!([
   {first_name: "Augustus", last_name: "Miller", email: "amiller@me.com", password_digest: "$2a$12$/x28cyku3s.XY/qZYc7/6eRJwmLw/xfTsAh75zoYUlYraNkCSFjqa"},
-  {first_name: "Ambar", last_name: "Khan", email: "ambar.khan@icloud.com", password_digest: "$2a$12$M03s8PWyxJiamxP73o2TZutOqVKkkbFk/8AssTzaCTY96xKdWWeo."},
+  {first_name: "Ambar", last_name: "Khan", email: "ambarkhan@ucal.edu", password_digest: "$2a$12$M03s8PWyxJiamxP73o2TZutOqVKkkbFk/8AssTzaCTY96xKdWWeo."},
   {first_name: "Jaimie", last_name: "Butcher", email: "jbutcher@me.com", password_digest: "$2a$12$XWGJ1kfmcmhwph8og129c.tNWhkCXnkbfqLVCWrt73eiaYqetmlJ."},
   {first_name: "James", last_name: "Ellis", email: "loves_books@me.com", password_digest: "$2a$12$lJUlfsvT7422HD7E0X22guVsnY4ppflssxYX/m65ZP3x.OjPrKt9S"},
   {first_name: "Tom", last_name: "Potter", email: "tpotter@me.com", password_digest: "$2a$12$esPYynDjCk5EdlkgMLB1ieL1dYzaQPyJ7oaV3aax8oym2DGNpbHXW"},
