@@ -1,71 +1,85 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create!([
+  {first_name: "Augustus", last_name: "Miller", email: "amiller@me.com", password_digest: "$2a$12$/x28cyku3s.XY/qZYc7/6eRJwmLw/xfTsAh75zoYUlYraNkCSFjqa"},
+  {first_name: "Ambar", last_name: "Khan", email: "ambar.khan@icloud.com", password_digest: "$2a$12$M03s8PWyxJiamxP73o2TZutOqVKkkbFk/8AssTzaCTY96xKdWWeo."},
+  {first_name: "Jaimie", last_name: "Butcher", email: "jbutcher@me.com", password_digest: "$2a$12$XWGJ1kfmcmhwph8og129c.tNWhkCXnkbfqLVCWrt73eiaYqetmlJ."},
+  {first_name: "James", last_name: "Ellis", email: "loves_books@me.com", password_digest: "$2a$12$lJUlfsvT7422HD7E0X22guVsnY4ppflssxYX/m65ZP3x.OjPrKt9S"},
+  {first_name: "Tom", last_name: "Potter", email: "tpotter@me.com", password_digest: "$2a$12$esPYynDjCk5EdlkgMLB1ieL1dYzaQPyJ7oaV3aax8oym2DGNpbHXW"},
+  {first_name: "Jake", last_name: "Grub", email: "jgrub@me.com", password_digest: "$2a$12$bhkbTcJPNEldeAcXwHgI9.GjjUohzAdpVh7w3g00PTehtvH2uPfDK"},
+  {first_name: "Jane", last_name: "Doe", email: "jane@jane.com", password_digest: "$2a$12$y2ZyKA6UgdRUHz8O/MZT3O4s/byrIVgelUPll/zeJLp0x3fVGVUaK"},
+  {first_name: "Eva", last_name: "Khan", email: "eva@me.com", password_digest: "$2a$12$pydScM3JpxQapXrd5M4bVO6PQOPihJP5XeGctr18Sma1gDq9wvfVy"}
+])
 
-# user = User.create(first_name: 'Jane', last_name: 'Doe', email: 'jane_doe@me.com')
+Event.create!([
+  {name: "Mysticism in the The Final Empire (Mistborn #1) ", date: "12/19/2020", time: "7:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMd12837", user_id: 1, book_id: "9780765377135", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480717416l/68428._SY475_.jpg", book_title: "Mistborn", book_subtitle: "The Final Empire", book_author: "Brandon Sanderson", book_description: "For a thousand years the ash fell and no flowers bloomed. For a thousand years the Skaa slaved in misery and lived in fear. For a thousand years the Lord Ruler, the \"Sliver of Infinity,\" reigned with absolute power and ultimate terror, divinely invincible. Then, when hope was so long lost that not even its memory remained, a terribly scarred, heart-broken half-Skaa rediscovered it in the depths of the Lord Ruler's most hellish prison. Kelsier \"snapped\" and found in himself the powers of a Mistborn. A brilliant thief and natural leader, he turned his talents to the ultimate caper, with the Lord Ruler himself as the mark.\n\nKelsier recruited the underworld's elite, the smartest and most trustworthy allomancers, each of whom shares one of his many powers, and all of whom relish a high-stakes challenge. Only then does he reveal his ultimate dream, not just the greatest heist in history, but the downfall of the divine despot.\n\nBut even with the best criminal crew ever assembled, Kel's plan looks more like the ultimate long shot, until luck brings a ragged girl named Vin into his life. Like him, she's a half-Skaa orphan, but she's lived a much harsher life. Vin has learned to expect betrayal from everyone she meets, and gotten it. She will have to learn to trust, if Kel is to help her master powers of which she never dreamed.\n\nThis saga dares to ask a simple question: What if the hero of prophecy fails?"},
+  {name: "Religion in Hyperion", date: "01/30/2020", time: "7:00pm", meeting_link: "www.zoomlink.com/109178371908274097812036", user_id: 13, book_id: "9780553288209", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405546838l/77566.jpg", book_title: "The Hyperion Omnibus", book_subtitle: nil, book_author: "Dan Simmons", book_description: "The Hyperion books are credited with single-handedly reinventing and reinvigorating SF in the 1990s. A broad canvased, hugely imaginative and exciting SF epic, the books draw on the works of Keats and provide a uniquely intelligent and literary approach with cutting edge science, compelling characterisation and edge-of-your-seat excitement. The story is continued in ENDYMION and THE RISE OF ENDYMION, which Gollancz will also be publishing in an omnibus volume."},
+  {name: "Book Discussion on Dune by Frank H.", date: "12/19/2020", time: "4:30pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMd12we2", user_id: 1, book_id: "9780441013593", image: "https://images-na.ssl-images-amazon.com/images/I/412b7kAJE2L._SX277_BO1,204,203,200_.jpg", book_title: "Dune", book_subtitle: "", book_author: "Frank Herbert", book_description: "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...\n\nWhen House Atreides is betrayed, the destruction of Paul’s family will set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad’Dib, he will bring to fruition humankind’s most ancient and unattainable dream."},
+  {name: "Holiday Fun with the Stupidest Angel", date: "12/30/2020", time: "8:00pm", meeting_link: "www.zoomlink.com/109178371908274097812049", user_id: 4, book_id: "9780060842352", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331320721l/74731.jpg", book_title: "Stupidest Angel:", book_subtitle: "Heartwarming Tale of Christmas Terror", book_author: "Christopher Moore", book_description: "'Twas the night (okay, more like the week) before Christmas, and all through the tiny community of Pine Cove, California, people are busy buying, wrapping, packing, and generally getting into the holiday spirit.\n\nBut not everybody is feeling the joy. Little Joshua Barker is in desperate need of a holiday miracle. No, he's not on his deathbed; no, his dog hasn't run away from home. But Josh is sure that he saw Santa take a shovel to the head, and now the seven-year-old has only one prayer: Please, Santa, come back from the dead.\n\nBut hold on! There's an angel waiting in the wings. (Wings, get it?) It's none other than the Archangel Raziel come to Earth seeking a small child with a wish that needs granting. Unfortunately, our angel's not sporting the brightest halo in the bunch, and before you can say \"Kris Kringle,\" he's botched his sacred mission and sent the residents of Pine Cove headlong into Christmas chaos, culminating in the most hilarious and horrifying holiday party the town has ever seen."},
+  {name: "The Human Race and the Existential Threat in Enders Game", date: "12/22/2020", time: "7:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz093hsd8", user_id: 2, book_id: "9780812550702", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408303130l/375802.jpg", book_title: "Ender's Game", book_subtitle: "", book_author: "Orson Scott Card", book_description: "Andrew \"Ender\" Wiggin thinks he is playing computer simulated war games; he is, in fact, engaged in something far more desperate. The result of genetic experimentation, Ender may be the military genius Earth desperately needs in a war against an alien enemy seeking to destroy all human life. The only way to find out is to throw Ender into ever harsher training, to chip away and find the diamond inside, or destroy him utterly. Ender Wiggin is six years old when it begins. He will grow up fast.\n\nBut Ender is not the only result of the experiment. The war with the Buggers has been raging for a hundred years, and the quest for the perfect general has been underway almost as long. Ender's two older siblings, Peter and Valentine, are every bit as unusual as he is, but in very different ways. While Peter was too uncontrollably violent, Valentine very nearly lacks the capability for violence altogether. Neither was found suitable for the military's purpose. But they are driven by their jealousy of Ender, and by their inbred drive for power. Peter seeks to control the political process, to become a ruler. Valentine's abilities turn more toward the subtle control of the beliefs of commoner and elite alike, through powerfully convincing essays. Hiding their youth and identities behind the anonymity of the computer networks, these two begin working together to shape the destiny of Earth-an Earth that has no future at all if their brother Ender fails."},
+  {name: "Discussing Harry Potter - Starting with Book 1", date: "01/02/2021", time: "5:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz09kgk9", user_id: 2, book_id: "9780307346605", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg", book_title: "Harry Potter and the Sorcerer's Stone", book_subtitle: "", book_author: "J.K. Rowling", book_description: "Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.\n\nAfter a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry.\n\nThough Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. But doing so will bring him into contact with forces more terrifying than he ever could have imagined.\n\nFull of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come"},
+  {name: "Magic vs Tech - Minimum Wage Magic", date: "03/03/2021", time: "12:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz0946h;", user_id: 3, book_id: "9781952367007", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601280302l/42385018._SY475_.jpg", book_title: "Minimum Wage Magic", book_subtitle: "", book_author: "Rachel Aaron", book_description: "Making a living is hard. In a lawless city where gods are real, dragons are traffic hazards, and buildings move around on their own, it can feel downright impossible.\n\nGood thing freelance mage Opal Yong-ae has never let little things like impossibility stop her. She’s found a way to put her overpriced magical art history degree to use as a Cleaner: a contract municipal employee who empties out abandoned apartments and resells the unusual treasures she finds inside for a profit. It’s not a pretty job, or a safe one--there’s a reason she wears bite-proof gloves--but when you’re neck-deep in debt to a very magical, very nasty individual, you can’t be picky about where the money comes from.\n\nBut even Opal’s low standards are put to the test when the only thing of value in her latest apartment is the body of the previous tenant. Dealing with the dead isn’t technically part of her job, but this mage died hiding a secret that could be worth a lot of money, and Opal’s the only one who knows. With debts she can’t pay due at the end of the week, this could be the big break she’s been waiting for, but in a city of runaway magic where getting in over your head generally means losing it, the cost of chasing this opportunity might be more than Opal can survive."},
+  {name: "Discussing a Classic - Interview with a Vampire", date: "12/20/2020", time: "2:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz0988hihih", user_id: 4, book_id: "", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1380631642l/43763.jpg", book_title: "Interview with the Vampire", book_subtitle: "", book_author: "Anne Rice", book_description: "This is the story of Louis, as told in his own words, of his journey through mortal and immortal life. Louis recounts how he became a vampire at the hands of the radiant and sinister Lestat and how he became indoctrinated, unwillingly, into the vampire way of life. His story ebbs and flows through the streets of New Orleans, defining crucial moments such as his discovery of the exquisite lost young child Claudia, wanting not to hurt but to comfort her with the last breaths of humanity he has inside. Yet, he makes Claudia a vampire, trapping her womanly passion, will, and intelligence inside the body of a small child. Louis and Claudia form a seemingly unbreakable alliance and even \"settle down\" for a while in the opulent French Quarter. Louis remembers Claudia's struggle to understand herself and the hatred they both have for Lestat that sends them halfway across the world to seek others of their kind. Louis and Claudia are desperate to find somewhere they belong, to find others who understand, and someone who knows what and why they are.\n\nLouis and Claudia travel Europe, eventually coming to Paris and the ragingly successful Theatre des Vampires--a theatre of vampires pretending to be mortals pretending to be vampires. Here they meet the magnetic and ethereal Armand, who brings them into a whole society of vampires. But Louis and Claudia find that finding others like themselves provides no easy answers and in fact presents dangers they scarcely imagined."},
+  {name: "Modern Influence - Grimms Fairytales", date: "01/30/2020", time: "7:00pm", meeting_link: "www.zoomlink.com/109178371908274097812036", user_id: 14, book_id: "9781631067181", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1369540060l/22917.jpg", book_title: "The Complete Grimm's Fairy Tales", book_subtitle: "", book_author: "Jacob Grimm & Wilhelm Grimm", book_description: "Originally titled Children’s and Household Tales, The Complete Grimm’s Fairy Tales contains the essential bedtime stories for children worldwide for the better part of two centuries. The Brothers Grimm, Jacob and Wilhelm, were German linguists and cultural researchers who gathered legendary folklore and aimed to collect the stories exactly as they heard them. 2012 marked the 200th anniversary of Grimm’s Fairy Tales, and what better way to celebrate than to include all 211 stories into the Knickerbocker Classic Series?\n\nFeaturing all your favorite classics, including “Hansel and Gretel,” “Cinderella,” “The Frog Prince,” “Rapunzel,” “Snow White,” “Rumpelstiltskin,” and dozens more, The Complete Grimm’s Fairy Tales is also accompanied by 40 color plates and 60 black and white illustrations from award-winning English illustrator Arthur Rackham, whose books and prints are now highly sought-after collectibles."},
+  {name: "Prepared for a Zombie Apocalaypse? World War Z", date: "12/23/2020", time: "8:00pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz091783hd3", user_id: 2, book_id: "9780307346605", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528312647l/8908._SX318_.jpg", book_title: "World War Z: ", book_subtitle: "An Oral History of the Zombie War", book_author: "Max Brooks", book_description: "Ranging from the now infamous village of New Dachang in the United Federation of China, where the epidemiological trail began with the twelve-year-old Patient Zero, to the unnamed northern forests where untold numbers sought a terrible and temporary refuge in the cold, to the United States of Southern Africa, where the Redeker Plan provided hope for humanity at an unspeakable price, to the west-of-the-Rockies redoubt where the North American tide finally started to turn, this invaluable chronicle reflects the full scope and duration of the Zombie War."},
+  {name: "World Building with Patricia Briggs", date: "3/01/2021", time: "5:45pm", meeting_link: "www.zoomlink.com/190hf983rhbf8", user_id: 14, book_id: "9780441015665", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358229529l/1412138.jpg", book_title: "Iron Kissed", book_subtitle: nil, book_author: "Patricia Briggs", book_description: "“Expect to be spellbound”* by Patricia Briggs’s #1 New York Times bestselling series starring Mercy Thompson. Being a lowly “walker” in a world of vampires, werewolves, and fae once kept her safe. But Mercy’s bark—and bite—are not so harmless any more… Though Mercy can shift her shape into that of a coyote, her loyalty never wavers. So when her former boss and mentor, Zee, asks for her help, she’s there for him. A series of murders has rocked a fae reservation, and Zee needs her unique gifts, namely her coyote sense of smell, to sniff out the killer. But when Zee is accused of murdering the suspect Mercy outed, he’s left to rot behind bars by his own kind. Now it’s up to Mercy to clear his name, whether he wants her to or not. Mercy’s loyalty is under pressure from other directions, too. Werewolves are not known for their patience, and if Mercy can’t decide between the two she cares for, Sam and Adam may make the choice for her... *Lynn Viehl, New York Times bestselling author"},
+  {name: "Discussing From Blood and Ash", date: "01/22/2021", time: "5:00 pm", meeting_link: "https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz09", user_id: 14, book_id: "9781952457012", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585598504l/52831200._SY475_.jpg", book_title: "From Blood and Ash", book_subtitle: "", book_author: "Jennifer L. Armentrout", book_description: "A Maiden…\n\nChosen from birth to usher in a new era, Poppy’s life has never been her own. The life of the Maiden is solitary. Never to be touched. Never to be looked upon. Never to be spoken to. Never to experience pleasure. Waiting for the day of her Ascension, she would rather be with the guards, fighting back the evil that took her family, than preparing to be found worthy by the gods. But the choice has never been hers.\n\nA Duty…\n\nThe entire kingdom’s future rests on Poppy’s shoulders, something she’s not even quite sure she wants for herself. Because a Maiden has a heart. And a soul. And longing. And when Hawke, a golden-eyed guard honor bound to ensure her Ascension, enters her life, destiny and duty become tangled with desire and need. He incites her anger, makes her question everything she believes in, and tempts her with the forbidden.\n\nA Kingdom…\n\nForsaken by the gods and feared by mortals, a fallen kingdom is rising once more, determined to take back what they believe is theirs through violence and vengeance. And as the shadow of those cursed draws closer, the line between what is forbidden and what is right becomes blurred. Poppy is not only on the verge of losing her heart and being found unworthy by the gods, but also her life when every blood-soaked thread that holds her world together begins to unravel."},
+  {name: "Character Creation & World Building", date: "1/08/2021", time: "7:00pm", meeting_link: "www.zoomlink.com/893hifrhq983hf", user_id: 16, book_id: "9780142437209", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1311644083l/106749.jpg", book_title: "Tales of Angria", book_subtitle: nil, book_author: "Charlotte Brontë", book_description: "In 1834, Charlotte Brontë and her brother Branwell created the imaginary kingdom of Angria in a series of tiny handmade books. Continuing their saga some years later, the five 'novelettes' in this volume were written by Charlotte when she was in her early twenties, and depict a aristocratic beau monde in witty, racy and ironic language. She creates an exotic, scandalous atmosphere of intrigue and destructive passions, with a cast ranging from the ageing rake Northangerland and his Byronic son-in-law Zamorna, King of Angria, to Mary Percy, Zamorna's lovesick wife, and Charles Townshend, the cynical, gossipy narrator. Together the tales provide a fascinating glimpse into the mind and creative processes of the young writer who was to become one of the world's great novelists."},
+  {name: "Dystopian Future?", date: "", time: "", meeting_link: "", user_id: 16, book_id: "9781838056117", image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590624313l/53527817._SY475_.jpg", book_title: "VanWest The Past", book_subtitle: nil, book_author: "Kenneth Thomas", book_description: "Readers' Favorite 2020 Book Award Winner for Time-Travel The Past is the first book in the VanWest series, about an Enforcer who lives in a dystopian Earth of the year 3000 and works for an authoritarian ruler called the Universal Council. Tasked with travelling through time to stop a renegade sect, that seeks to change Earth's past, he comes to learn about his dark origins and his unique ability. Dystopian, post apocalyptic, paranormal, action, adventure, time-travel, thriller, historical fiction and science fiction."}
+])
 
-# user = User.create(first_name: 'James', last_name: 'Ellis', email: 'loves_books@me.com')
+EventRegistration.create!([
+  {user_id: 2, event_id: 1},
+  {user_id: 3, event_id: 1},
+  {user_id: 4, event_id: 1},
+  {user_id: 2, event_id: 2},
+  {user_id: 3, event_id: 2},
+  {user_id: 1, event_id: 3},
+  {user_id: 1, event_id: 4},
+  {user_id: 3, event_id: 4},
+  {user_id: 4, event_id: 4},
+  {user_id: 1, event_id: 5},
+  {user_id: 3, event_id: 5},
+  {user_id: 2, event_id: 6},
+  {user_id: 1, event_id: 7},
+  {user_id: 2, event_id: 7},
+  {user_id: 14, event_id: 1},
+  {user_id: 14, event_id: 9},
+  {user_id: 14, event_id: 3},
+  {user_id: 14, event_id: 1},
+  {user_id: 14, event_id: 5},
+  {user_id: 14, event_id: 7},
+  {user_id: 16, event_id: 5},
+  {user_id: 1, event_id: 29},
+  {user_id: 1, event_id: 6},
+  {user_id: 14, event_id: 10},
+  {user_id: 14, event_id: 8},
+  {user_id: 14, event_id: 8},
+  {user_id: 14, event_id: 7},
+  {user_id: 14, event_id: 7},
+  {user_id: 1, event_id: 7},
+  {user_id: 1, event_id: 7},
+  {user_id: 1, event_id: 28},
+  {user_id: 1, event_id: 28},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 2},
+  {user_id: 16, event_id: 6},
+  {user_id: 2, event_id: 1},
+  {user_id: 3, event_id: 1},
+  {user_id: 4, event_id: 1},
+  {user_id: 2, event_id: 2},
+  {user_id: 3, event_id: 2},
+  {user_id: 1, event_id: 3},
+  {user_id: 1, event_id: 4},
+  {user_id: 3, event_id: 4},
+  {user_id: 4, event_id: 4},
+  {user_id: 1, event_id: 5},
+  {user_id: 3, event_id: 5},
+  {user_id: 2, event_id: 6},
+  {user_id: 1, event_id: 7},
+  {user_id: 2, event_id: 7}
+])
 
-# user = User.create(first_name: 'Tom', last_name: 'Potter', email: 'tpotter@me.com')
 
-# user = User.create(first_name: 'Jake', last_name: 'Grub', email: 'jgrub@me.com')
-
-# event = Event.create(name: 'Book Discussion on Dune by Frank H.', date: '12/19/2020', time: '6:30pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMd12we2' )
-
-# event = Event.create(name: 'Mysticism in the The Final Empire (Mistborn #1) ', date: '12/19/2020', time: '7:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMd12837')
-
-# event = Event.create(name: 'The Human Race and the Existential Threat in Enders Game', date: '12/22/2020', time: '7:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz093hsd8')
-
-# event = Event.create(name: 'Are You Prepared for A zombie Apocalypse - World War Z', date: '12/23/2020', time: '8:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz091783hd3')
-
-# event = Event.create(name: 'Discussing Harry Potter - Starting with Book 1', date: '01/02/2021', time: '5:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz09kgk9')
-
-# event = Event.create(name: 'Magic vs Tech - Minimum Wage Magic', date: '01/03/2021', time: '12:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz0946h;')
-
-# event = Event.new(name: "Discussing a Classic - Interview with a Vampire", date: '12/20/2020', time: '2:00pm', meeting_link: 'https://us02web.zoom.us/j/4817711318?pwd=Ly9TcGgyU3IxV3l6aXJoNDExaUpMdz0988hihih', user_id: 4)
-
-# event_registration = EventRegistration.new(user_id: 2, event_id: 1)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 3, event_id: 1)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 4, event_id: 1)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 2, event_id: 2)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 3, event_id: 2)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 1, event_id: 3)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 1, event_id: 4)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 3, event_id: 4)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 4, event_id: 4)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 1, event_id: 5)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 3, event_id: 5)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 2, event_id: 6)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 1, event_id: 7)
-# event_registration.save!
-
-# event_registration = EventRegistration.new(user_id: 2, event_id: 7)
-# event_registration.save!
