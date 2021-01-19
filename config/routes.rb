@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   end
 
   get 'page_controller/*path', to: 'page_controller#index', format: false
-end
+  
 end
