@@ -18,4 +18,7 @@ Rails.application.routes.draw do
 
     post "eventregistrations" => "event_registrations#create"
   end
+
+  get 'page_controller/*path', to: 'page_controller#index', format: false
+end
 end
