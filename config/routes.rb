@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   
   
   namespace :api do
+    root :to => 'events#index'
+
     get "/events" => "events#index"
     post "/events" => "events#create"
     get "/events/:id" => "events#show"
