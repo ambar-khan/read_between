@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     post "eventregistrations" => "event_registrations#create"
   end
 
-  get 'page_controller/*path', to: 'page_controller#index', format: false
+  root 'application#index'
+  get '/*path', to: 'application#index'
   
 end
